@@ -1,0 +1,55 @@
+---
+# Front matter richiesto da Jekyll: senza questo, il file non passa
+# dalla pipeline Sass e viene servito come testo grezzo invece che come CSS.
+---
+
+@import "minima";
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.profile-text p {
+  margin-bottom: 0.75rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.social-icons img {
+  width: 26px;
+  height: 26px;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.social-icons a:hover img {
+  opacity: 1;
+}
+
+// Sotto i ~480px la foto va sopra al testo invece che a fianco,
+// altrimenti su schermo stretto si schiaccia troppo.
+@media (max-width: 480px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
