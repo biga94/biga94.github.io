@@ -7,8 +7,7 @@ baseurl: ""
 
 theme: minima
 
-author:
-  name: Davide Biganzoli
+author: Davide Biganzoli
 
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
