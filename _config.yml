@@ -1,0 +1,24 @@
+# Site settings
+title: Davide Biganzoli
+description: >-
+  Personal site — bio, contact links, and occasional notes.
+url: "https://biga94.github.io"
+baseurl: ""
+
+theme: minima
+
+author:
+  name: Davide Biganzoli
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
