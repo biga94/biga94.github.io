@@ -41,6 +41,15 @@
   opacity: 1;
 }
 
+.publication-list {
+  padding-left: 1.2rem;
+}
+
+.publication-list li {
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+
 // Sotto i ~480px la foto va sopra al testo invece che a fianco,
 // altrimenti su schermo stretto si schiaccia troppo.
 @media (max-width: 480px) {

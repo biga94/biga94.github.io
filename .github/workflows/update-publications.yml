@@ -1,0 +1,41 @@
+# Workflow SEPARATO dal deploy del sito: aggiorna solo _data/publications.yml
+# interrogando l'API pubblica di ORCID e facendo commit se qualcosa è
+# cambiato. Non tocca il build/deploy di Jekyll — se questo workflow fallisce,
+# il sito resta online e invariato, nella peggiore delle ipotesi la lista
+# pubblicazioni non si aggiorna finché non si risolve.
+name: Update publications from ORCID
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # ogni lunedì alle 06:00 UTC
+  workflow_dispatch: {} # per lanciarlo a mano da Actions quando serve
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Fetch publications from ORCID
+        run: python3 scripts/update_publications.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/publications.yml
+          if git diff --cached --quiet; then
+            echo "Nessuna modifica, niente da committare."
+          else
+            git commit -m "Aggiorna pubblicazioni da ORCID [automated]"
+            git push
+          fi
