@@ -18,6 +18,14 @@ layout: home
       <a href="https://www.researchgate.net/profile/Davide-Biganzoli" target="_blank" rel="me noopener" aria-label="ResearchGate">
         <img src="{{ '/assets/icons/researchgate.svg' | relative_url }}" alt="ResearchGate">
       </a>
+      <a href="https://orcid.org/0000-0002-6509-6870" target="_blank" rel="me noopener" aria-label="ORCID">
+        <img src="{{ '/assets/icons/orcid.svg' | relative_url }}" alt="ORCID">
+      </a>
+      <a href="https://scholar.google.com/citations?user=pX0_In8AAAAJ&hl=it" target="_blank" rel="me noopener" aria-label="Google Scholar">
+        <img src="{{ '/assets/icons/googlescholar.svg' | relative_url }}" alt="Google Scholar">
+      </a>
     </div>
   </div>
 </div>
+
+{%- include person-schema.html -%}
