@@ -1,0 +1,99 @@
+# File generato automaticamente da scripts/update_publications.py
+# via l'API pubblica di ORCID. NON MODIFICARE A MANO: viene
+# sovrascritto a ogni run del workflow update-publications.yml.
+
+- title: "Neurophenomenology, psychoneuroendocrinoimmunology and epigenetics: towards an integrative framework for understanding the health benefits of art and aesthetic experiences"
+  year: 2026
+  journal: "Journal of the Royal Society Interface"
+  doi: "10.1098/rsif.2025.0482"
+  url: "https://doi.org/10.1098/rsif.2025.0482"
+- title: "Comparative analysis of pyrosequencing and methylation profiling for assessing LINE-1 and Alu methylation in response to low-level benzene exposure"
+  year: 2025
+  journal: null
+  doi: null
+  url: "https://air.unimi.it/handle/2434/1263055"
+- title: "Correction: Berardo et al. Expanded Newborn Screening in Italy: The First Report of Lombardy Region. Int. J. Neonatal Screen. 2025, 11, 31"
+  year: 2025
+  journal: "International Journal of Neonatal Screening"
+  doi: "10.3390/ijns11030057"
+  url: "https://doi.org/10.3390/ijns11030057"
+- title: "Expanded Newborn Screening in Italy: The First Report of Lombardy Region"
+  year: 2025
+  journal: "International Journal of Neonatal Screening"
+  doi: "10.3390/ijns11020031"
+  url: "https://doi.org/10.3390/ijns11020031"
+- title: "Extracellular vesicles and their miRNA cargo in response to physical exercise: potential involvement in oxidative stress regulation – Insights from the HEBE Study"
+  year: 2025
+  journal: null
+  doi: null
+  url: "https://air.unimi.it/handle/2434/1263059"
+- title: "Amino Acid Patterns in Children with Autistic Spectrum Disorder: A Preliminary Biochemical Evaluation"
+  year: 2025
+  journal: "Nutrients"
+  doi: "10.3390/nu17020274"
+  url: "https://doi.org/10.3390/nu17020274"
+- title: "Influence of Air Pollution Exposure on the microRNA Content of Neuronal Extracellular Vesicles in Subjects Affected by Major Depressive Disorder"
+  year: 2025
+  journal: null
+  doi: "10.1021/envhealth.5c00336"
+  url: "https://doi.org/10.1021/envhealth.5c00336"
+- title: "Rationale and study protocol of the MAMELI Cohort study (Mapping the Methylation of repetitive elements to track the Exposome effects on health: the city of Legnano as a Living lab)"
+  year: 2025
+  journal: null
+  doi: "10.1371/journal.pone.0326467"
+  url: "https://doi.org/10.1371/journal.pone.0326467"
+- title: "Transposable elements and the stress response in healthy humans: preliminary characterization to identify a baseline regulation through the MAMELI cohort"
+  year: 2025
+  journal: null
+  doi: null
+  url: "https://air.unimi.it/handle/2434/1263096"
+- title: "Recent trends in foreign body ingestion (FBI) epidemiology: A national cohort study"
+  year: 2024
+  journal: "Digestive and Liver Disease"
+  doi: "10.1016/j.dld.2024.10.002"
+  url: "https://doi.org/10.1016/j.dld.2024.10.002"
+- title: "Towards genomic-Newborn Screening: Technical feasibility of Exome Sequencing starting from dried blood spots"
+  year: 2024
+  journal: "Molecular Genetics and Metabolism Reports"
+  doi: "10.1016/j.ymgmr.2024.101074"
+  url: "https://doi.org/10.1016/j.ymgmr.2024.101074"
+- title: "Long-term cytokine profile in multisystem inflammatory disease among children"
+  year: 2024
+  journal: null
+  doi: "10.1016/j.cyto.2024.156744"
+  url: "https://doi.org/10.1016/j.cyto.2024.156744"
+- title: "Vitamin B12 deficiency in newborns: impact on individual’s health status and healthcare costs"
+  year: 2024
+  journal: null
+  doi: "10.1515/cclm-2024-0692"
+  url: "https://doi.org/10.1515/cclm-2024-0692"
+- title: "Exploring biomarker dynamics in inflamm-aging phenomenon: A longitudinal multivariate analysis from the HEBE project"
+  year: 2024
+  journal: null
+  doi: "10.7490/F1000RESEARCH.1120032.1"
+  url: "https://doi.org/10.7490/F1000RESEARCH.1120032.1"
+- title: "Environmental and Lifestyle Cancer Risk Factors: Shaping Extracellular Vesicle OncomiRs and Paving the Path to Cancer Development"
+  year: 2023
+  journal: "Cancers"
+  doi: "10.3390/cancers15174317"
+  url: "https://doi.org/10.3390/cancers15174317"
+- title: "Foreign body ingestion in children: Definition of a nomogram to predict surgical or endoscopic intervention"
+  year: 2023
+  journal: "Digestive and Liver Disease"
+  doi: "10.1016/j.dld.2023.07.017"
+  url: "https://doi.org/10.1016/j.dld.2023.07.017"
+- title: "Individual risk prediction of high grade prostate cancer based on the combination between total prostate-specific antigen (PSA) and free to total PSA ratio"
+  year: 2023
+  journal: "Clinical Chemistry and Laboratory Medicine (CCLM)"
+  doi: "10.1515/cclm-2023-0008"
+  url: "https://doi.org/10.1515/cclm-2023-0008"
+- title: "Beyond Traditional Morphological Characterization of Lung Neuroendocrine Neoplasms: In Silico Study of Next-Generation Sequencing Mutations Analysis across the Four World Health Organization Defined Groups"
+  year: 2020
+  journal: "Cancers"
+  doi: "10.3390/cancers12102753"
+  url: "https://doi.org/10.3390/cancers12102753"
+- title: "P2.09-05 Clinical and Biological Characterization of Lung Enteric Adenocarcinoma"
+  year: 2019
+  journal: "Journal of Thoracic Oncology"
+  doi: "10.1016/j.jtho.2019.08.1654"
+  url: "https://doi.org/10.1016/j.jtho.2019.08.1654"
