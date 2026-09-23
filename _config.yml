@@ -19,22 +19,8 @@ permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-scholar
-
-# Config per jekyll-scholar (pagina pubblicazioni).
-# last_name/first_name: usati per evidenziare il tuo nome in grassetto
-# nella lista autori di ogni paper, invece di perderlo in mezzo agli "others".
-scholar:
-  last_name: Biganzoli
-  first_name: [Davide, D.]
-  style: apa
-  source: ./_bibliography
-  bibliography: references.bib
-  bibliography_template: "{{reference}}"
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - vendor
-  - .bundle
