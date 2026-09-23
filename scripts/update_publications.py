@@ -13,6 +13,7 @@ Non modificare _data/publications.yml a mano: viene sovrascritto a ogni
 run del workflow update-publications.yml.
 """
 import json
+import os
 import sys
 import urllib.request
 import urllib.error
@@ -94,6 +95,7 @@ def main():
         lines.append(f"  doi: {yaml_scalar(e['doi'])}")
         lines.append(f"  url: {yaml_scalar(e['url'])}")
 
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
 
