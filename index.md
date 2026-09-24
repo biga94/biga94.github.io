@@ -28,4 +28,6 @@ layout: home
   </div>
 </div>
 
+{%- include now-listening.html -%}
+
 {%- include person-schema.html -%}

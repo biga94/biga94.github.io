@@ -1,0 +1,16 @@
+{%- assign now_url = site.data.now_listening.url -%}
+{%- if now_url and now_url contains "music.apple.com" -%}
+  {%- assign embed_url = now_url | replace: "music.apple.com", "embed.music.apple.com" -%}
+  <div class="now-listening">
+    <p class="now-listening-label">🎧 Now listening</p>
+    <iframe
+      allow="autoplay *; encrypted-media *;"
+      frameborder="0"
+      height="175"
+      style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
+      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+      src="{{ embed_url }}"
+      loading="lazy">
+    </iframe>
+  </div>
+{%- endif -%}
