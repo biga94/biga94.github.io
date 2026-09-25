@@ -3,7 +3,99 @@
 # dalla pipeline Sass e viene servito come testo grezzo invece che come CSS.
 ---
 
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap");
+
 @import "minima";
+
+// --- Palette calda, chiaro/scuro automatico in base a prefers-color-scheme ---
+// I valori sono scelti per restare sopra il contrasto AA (4.5:1) di WCAG
+// sia in chiaro che in scuro.
+:root {
+  color-scheme: light dark;
+
+  --color-bg: #fdfaf7;
+  --color-bg-alt: #f5eee5;
+  --color-text: #2b2622;
+  --color-text-muted: #6e6258;
+  --color-accent: #9c4a1c;
+  --color-border: #e6dccf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1c1a18;
+    --color-bg-alt: #2a2622;
+    --color-text: #efe8e0;
+    --color-text-muted: #b3a89b;
+    --color-accent: #e08a52;
+    --color-border: #38332d;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.footer-heading {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:visited {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-text);
+}
+
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--color-text);
+}
+
+.site-nav .page-link {
+  color: var(--color-text);
+}
+
+.site-nav .page-link:hover {
+  color: var(--color-accent);
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.footer-heading {
+  color: var(--color-text);
+}
+
+.footer-col p {
+  color: var(--color-text-muted);
+}
+
+.site-footer a {
+  color: var(--color-text-muted);
+}
+
+.site-footer a:hover {
+  color: var(--color-accent);
+}
 
 .profile-header {
   display: flex;
@@ -18,21 +110,34 @@
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
+  box-shadow: 0 0 0 4px var(--color-bg-alt);
 }
 
 .profile-text p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.65;
 }
 
 .social-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.1rem;
+  gap: 0.5rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.15s ease;
+}
+
+.social-icons a:hover {
+  background: var(--color-bg-alt);
 }
 
 .social-icons img {
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
   opacity: 0.75;
   transition: opacity 0.15s ease;
 }
@@ -42,13 +147,15 @@
 }
 
 .now-listening {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
 }
 
 .now-listening-label {
   font-size: 0.85rem;
-  color: #767676;
-  margin-bottom: 0.4rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
 }
 
 .publication-list {
@@ -56,8 +163,18 @@
 }
 
 .publication-list li {
-  margin-bottom: 0.9rem;
-  line-height: 1.5;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.publication-list li a {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.publication-list li a:hover {
+  color: var(--color-accent);
 }
 
 // Sotto i ~480px la foto va sopra al testo invece che a fianco,
