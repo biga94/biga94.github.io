@@ -146,6 +146,15 @@ a:hover {
   opacity: 1;
 }
 
+// Le icone sono SVG a colore fisso (nero), caricate via <img>: non possono
+// ereditare "currentColor" dal tema. In dark mode le invertiamo via CSS
+// perché restino visibili sul fondo scuro invece di sparire.
+@media (prefers-color-scheme: dark) {
+  .social-icons img {
+    filter: invert(1);
+  }
+}
+
 .now-listening {
   margin-top: 2.5rem;
   padding-top: 1.5rem;
