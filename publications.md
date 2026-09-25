@@ -17,7 +17,7 @@ permalink: /publications/
   {%- endfor %}
 </ul>
 {%- else -%}
-<p>Lista pubblicazioni in caricamento — riprova tra poco.</p>
+<p>Publication list loading — check back shortly.</p>
 {%- endif -%}
 
 {%- include person-schema.html -%}
